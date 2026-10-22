@@ -1,0 +1,20 @@
+name: PalePortal
+version: '1.0.0'
+main: com.paleportal.PalePortalPlugin
+api-version: '1.21'
+author: PalePortal Team
+description: Портал в измерение "Бледный лес" через рамку древнего города, активируемый музыкой
+website: https://github.com/
+
+commands:
+  paleportal:
+    description: Основная команда плагина PalePortal
+    usage: "/<command> <reload|spawn|setportal|setmusic>"
+    aliases: [paleporatl, pp]
+    permission: paleportal.admin
+    permission-message: "У вас нет прав на использование этой команды."
+
+permissions:
+  paleportal.admin:
+    description: Доступ к административным командам PalePortal
+    default: op
